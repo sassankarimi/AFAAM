@@ -1,0 +1,31 @@
+@import "../../assets/scss/base";
+
+.new-request-box {
+  &-inside {
+    &-btn {
+      direction: rtl;
+      background: $color_welcome_box_btn;
+      border-radius: 27px;
+      padding: 10px;
+      min-width: 230px;
+      color: $color_white;
+      font-family: "IRANYekanBold";
+      box-shadow: none;
+      border: none !important;
+      outline: none !important;
+      transition: opacity 500ms;
+      max-height: 50px;
+      &-txt {
+        margin-right: 3px;
+      }
+      &:hover {
+        opacity: 0.89;
+      }
+      &-container {
+        background: $color_welcome_box_inside;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  }
+}

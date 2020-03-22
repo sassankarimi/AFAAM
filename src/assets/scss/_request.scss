@@ -1,0 +1,417 @@
+.request {
+  //  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  &-form {
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    text-align: center;
+    //  direction: rtl;
+    padding: 50px 60px;
+  }
+}
+.request-stepper {
+  width: 100%;
+  overflow-x: hidden;
+}
+.stepper {
+  direction: rtl;
+  text-align: center;
+  min-height: 230px;
+  font-family: 'IRANYekanBold';
+  &-container {
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    transform: translate(17%, 0px);
+  }
+  &-progress {
+    width: 100%;
+    height: 5px;
+    background: $color_default_stepper;
+    position: absolute;
+    top: 55px;
+    right: 15%;
+    &-bar {
+      width: 0%;
+      height: 100%;
+      background: $color_filled_stepper;
+    }
+  }
+  &-box {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    width: 30%;
+    max-width: 300px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+    &-header {
+      font-size: 16px;
+    }
+    &-txt {
+      font-size: 13px;
+    }
+    &-one {
+      right: 0%;
+    }
+
+    &-two {
+      right: 50%;
+    }
+
+    &-three {
+      right: 100%;
+    }
+
+    &-icon {
+      vertical-align: middle;
+      background: $color_default_stepper;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+      margin-bottom: 5px;
+      padding-top: 12px;
+      &-done {
+        background: $color_filled_stepper;
+      }
+    }
+  }
+}
+
+.info-txt {
+  color: $color_default_stepper;
+  font-size: 10px;
+}
+
+.input-detail-container {
+  text-align: right;
+}
+
+.request-input-detail {
+  font-size: 13px;
+  font-family:"IRANYekanBold";
+  direction: rtl;
+  text-align: right;
+}
+
+.customized-input-label span {
+  font-family:"IRANYekanBold";
+  font-size: 13px;
+  direction: rtl;
+  text-align: right;
+}
+
+.send-request {
+  &-footer {
+    background: $background_submit_section;
+    min-height: 90px;
+    padding-top: 25px;
+  }
+  &-btn {
+    background: $color_submit;
+    text-align: center;
+    font-family:"IRANYekanBold";
+    outline: none !important;
+    border-radius: 45px;
+    min-width: 150px;
+    color: $color_white;
+    font-size: 13px;
+    box-shadow: none;
+    border: none;
+    padding: 15px;
+  }
+}
+
+.req-jumbo {
+  width: 50%;
+}
+
+.jumbo-header-txt {
+  color: $color_jumbu_header;
+}
+
+.switch-box {
+  float: left;
+}
+
+.insurance {
+  font-family: 'IRANYekanBold';
+  font-size: 13px;
+  text-align: right;
+  color: $gray_color_lighter;
+  &-title {
+    font-size: 15px;
+    color: $color_black;
+  }
+  &-price {
+    background: $color_switch_box;
+    color: $color_white;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 13px;
+    width: 125px;
+    font-family: 'IRANYekanBold';
+    min-height: 20px;
+    float: left;
+    text-align: center;
+    &-txt {
+      padding: 8px;
+      font-size: 10px;
+    }
+  }
+}
+
+.timing-table {
+  border: 3px solid $color_grey_border;
+  padding: 30px 10px;
+  font-family: 'IRANYekanBold';
+  color: $gray_color;
+  margin-top: 55px;
+  &-container {
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: 400px;
+    padding: 20px 30px;
+    direction: ltr;
+  }
+  &-item {
+    margin-bottom: 20px;
+    min-height: 35px;
+    position: relative;
+    &-bullet {
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: red;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 11px;
+    }
+    &-txt {
+      top: 5px;
+      position: absolute;
+      right: 15px;
+      width: 100%;
+      text-align: right;
+    }
+    &-date {
+      top: 6px;
+      position: absolute;
+      left: 0px;
+      font-size: 10px;
+    }
+  }
+}
+
+.request-information {
+  padding: 0rem 3rem 0 3rem;
+  border-bottom: 1px solid $color_grey_border;
+  &-right {
+    padding-top: 3rem;
+    border-left: 1px solid $color_grey_border;
+  }
+}
+
+.request-item-info {
+  text-align: right;
+  border-bottom: 1px dashed $color_grey_border;
+  font-family: 'IRANYekanBold';
+  padding: 3px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  &-container {
+    position: relative;
+    min-height: 40px;
+  }
+  &-txt {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &-subTxt {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: $gray_color_lighter;
+    font-size: 10px;
+  }
+  &-price {
+    font-family: 'IRANYekanBold';
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &-priceOne {
+    color: $purple_color;
+  }
+  &-priceTwo {
+    color: $color_red;
+  }
+  &-priceThree {
+    color: $color_green;
+  }
+}
+
+.request-item-info-details {
+  &-container {
+    padding-top: 3rem;
+  }
+  &-main {
+    max-height: 255px;
+    overflow: auto;
+    overflow-x: hidden;
+    direction: ltr;
+    padding-right: 3px;
+  }
+  text-align: right;
+  font-family: 'IRANYekanBold';
+  &-head {
+    font-size: 16px;
+  }
+  &-txt {
+    direction: rtl;
+    font-size: 12px;
+    color: $gray_color_lighter;
+  }
+}
+
+.factor-table {
+  direction: rtl;
+  text-align: center;
+  td,
+  th {
+    border-bottom: none !important;
+    border-top: none !important;
+  }
+  &-head {
+    color: $gray_color_lighter !important;
+    font-family: 'IRANYekanBold' !important;
+  }
+  &-money {
+    color: $purple_color !important;
+  }
+  &-desc {
+    color: $gray_color !important;
+  }
+}
+
+.factor {
+  &-header {
+    // background: url('/public/bgs/afaam-factor-bg.jpg') no-repeat center center;
+    background: $purple_color;
+    background-size: cover;
+    font-family: 'IRANYekanBold';
+    color: $color_white;
+    min-height: 430px;
+    padding: 120px;
+    padding-top: 190px;
+    padding-bottom: 100px;
+    direction: rtl;
+    &-spliter {
+      width: 100%;
+      height: 1px;
+      background: $color_factor_spliter;
+      display: inline-block;
+      width: 75%;
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+    &-txt {
+      font-family: 'IRANYekanBold';
+      font-size: 25px;
+      display: inline-block;
+    }
+    &-box {
+      display: inline-block;
+      font-size: 12px;
+      margin: 20px;
+      position: relative;
+      min-width: 180px;
+      min-height: 120px;
+      &-head {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      &-txt {
+        color: $gray_color_lighter;
+        position: absolute;
+        top: 20px;
+        right: 0;
+      }
+    }
+  }
+
+  &-body {
+    padding: 120px 0;
+    font-family: 'IRANYekanBold';
+  }
+
+  &-footer {
+    padding: 80px;
+    background: $background_submit_section;
+    direction: rtl;
+    font-family: 'IRANYekanBold';
+    &-prices {
+      margin-bottom: 50px;
+    }
+    &-pricing {
+      &-txt {
+        margin-left: 50px;
+      }
+      &-money {
+        color: $gray_color;
+      }
+    }
+    &-result {
+      color: $gray_color;
+      &-txt {
+        margin-bottom: 20px;
+        &-title {
+          margin-left: 50px;
+        }
+        &-money {
+          color: $color_pink;
+          font-family: 'IRANYekanBold';
+          font-size: 20px;
+        }
+      }
+      &-btn {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        color: $color_white;
+        background: $color_welcome_box_btn;
+        padding: 15px;
+        border-radius: 40px;
+        min-width: 100%;
+        transition: all 500ms;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.iosSlider-infoBox {
+  background: $ios_slider_bg;
+  position: absolute;
+  font-size: 10px;
+  font-family: 'IRANYekanBold';
+  &-min {
+    left: -15px;
+    bottom: -17px;
+  }
+  &-max {
+    right: -15px;
+    bottom: -17px;
+  }
+}

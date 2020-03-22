@@ -1,0 +1,63 @@
+$color_white: #fff;
+$color_withe_lighter: #a996e7;
+$color_black: #000;
+$color_black_lighter: #3b3b3b;
+$purple_color: linear-gradient(45deg, #fd81b5 0%, #c961f7 50%, #8089ff 100%);
+$gray_color: #68676d;
+$gray_color_lighter: #a09fa5;
+$color_submit: linear-gradient(45deg, #8089ff 0%, #54ceff 100%);
+
+$color_submit_hover: linear-gradient(45deg, #8089ff 0%, #54ceff 100%);
+$background_submit_section:#f7f8fa;
+$color_grey_border:#f5f5f5;
+$color_info: rgb(113,105,204);
+$color_error: #ff3c3c;
+$color_welcome_box:#717173;
+$color_welcome_box_inside:#f7f8fa;
+$color_welcome_box_btn:#34bfa2;
+$color_nav_badge: #5766e3;
+$color_default_stepper:#e1e3ef;
+$color_filled_stepper:#83d7c7;
+$color_jumbu_header:#5b5a60;
+$color_switch_box:#34bfa2;
+$color_red: #f64f69;
+$color_green:#34bfa2;
+$color_grey_border: #e8e8e8;
+$color_scrollBar: #bfc3cf;
+$color_scrollBar_hover: #a6abb8;
+$color_factor_spliter:#9462e7;
+$color_pink:#f02bac;
+$table-font-color:#575963;
+$ios_slider_bg:#eee;
+$header_shadow : #b7b7bb;
+
+
+@mixin insert_font_family($font-family...) {
+  @each $param in $font-family {
+    @font-face {
+      font-family: "#{$param}";
+      src: url("../fonts/#{$param}.ttf");
+    }
+  }
+}
+
+@mixin inline_block($height, $width) {
+  display: inline-block;
+  height: $height;
+  width: $width;
+}
+
+@mixin txt_positons() {
+  $positions: right center left;
+  @each $pos in $positions {
+    .txt-#{$pos} {
+      text-align: $pos;
+    }
+  }
+}
+
+@mixin marg-pos-value($pos, $value) {
+  .marg-#{$pos}-#{$value} {
+    margin-#{$pos}: $value;
+  }
+}

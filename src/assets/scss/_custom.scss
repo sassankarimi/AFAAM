@@ -1,0 +1,61 @@
+@import "variables";
+
+.input-icons {
+  background-color: $inputIconsBack;
+  color: $inputIconColor;
+  padding: 9px;
+  border-radius: .25rem;
+}
+.input-icon-right {
+  @extend .input-icons;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.input-icon-left {
+  @extend .input-icons;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body {
+  color: $table-font-color;
+  background: #f2f1f8;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rtl {
+  direction: rtl !important;
+}
+.ltr {
+  direction: ltr !important;
+}
+.box-br {
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: inline;
+}
+.second-font {
+  font-family: $second-font;
+}
+td {
+  font-family: "IRANYekanBold" !important;
+
+  color: $table-font-color !important;
+}
+th {
+  font-family: "IRANYekanBold" !important;
+  color: $color_white !important;
+}
+li {
+  list-style: none !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

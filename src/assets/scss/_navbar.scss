@@ -1,0 +1,29 @@
+.customeze-navbar{
+    direction: rtl;
+    text-align: right;
+    z-index: 100000;
+    box-shadow: 0 1px 22px 0 $header_shadow;
+    .dropdown{
+        &-menu{
+            text-align: right;
+        }
+    }
+}
+
+.nav-item-customize{
+    margin-right: 10px;
+}
+
+.nav-item-customize-badge{
+    background: $color_nav_badge;
+    font-family: "IRANYekanBold";
+    font-size: 12px;
+    margin-right: 3px;
+    display: inline-block;
+    color: $color_white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+
+

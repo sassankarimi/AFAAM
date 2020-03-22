@@ -1,0 +1,33 @@
+.new-request-box-container {
+  background: $color_white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+  font-size: 15px;
+  //   padding: 10px;
+  border-radius: 3px;
+  direction: rtl;
+  .new-request-box {
+    &-header {
+      font-size: 15px;
+      color: $color_welcome_box;
+      border-bottom: 0.2px solid $color_welcome_box_inside;
+      padding: 25px;
+    }
+    &-inside {
+      &-container {
+        background: $color_welcome_box_inside;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      padding: 55px;
+      font-family: "IRANYekanBold";
+      &-bold {
+        color: $color_black;
+        font-weight: bolder;
+      }
+    }
+  }
+}

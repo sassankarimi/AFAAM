@@ -1,0 +1,5 @@
+export const invoiceActionTypes = {
+    INVOICE_START: 'INVOICE_START',
+    INVOICE_SUCCESS: 'INVOICE_SUCCESS',
+    INVOICE_FAILURE: 'INVOICE_FAILURE',
+};

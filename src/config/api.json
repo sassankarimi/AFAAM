@@ -1,0 +1,10 @@
+{
+    "UserAuthentication":"/api/user/",
+    "UserVerification":"/api/user/verification/",
+    "CreatePurchase":"/api/purchase/",
+    "UpdatePurchase":"/api/purchase/",
+    "UpdateLoan":"/api/loan/",
+    "GetInvoice":"/api/payment/invoice/",
+    "GetUser":"/api/user/",
+    "GetLoans":"/api/loan"
+}
